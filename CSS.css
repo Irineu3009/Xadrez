@@ -1,0 +1,45 @@
+.flex-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}   
+
+.tabuleiro {
+    display: flex;
+    box-sizing: content-box;
+    border: solid 0.2em black; 
+    text-align: center;  /* Remova as aspas simples aqui */
+    margin: 0;
+} 
+ 
+.casabranca, .casapreta {  /* Corrija os seletores para casabranca e casapreta */
+    width: 5.2em; 
+    height: 4.4em;  
+    padding: 1em; 
+    border: solid 0.03em black; 
+    box-sizing: border-box;
+}      
+
+.casabranca {
+    background-color: rgb(204, 173, 173); 
+}
+
+.casapreta {
+    background-color: rgb(70, 43, 43); 
+}
+
+@media screen and (max-width: 450px) {            
+    .flex-container {
+        display: flex;
+        margin: 0;
+        text-align: center;  /* Remova as aspas simples aqui */
+        width: auto;
+        height: auto;
+    }
+    
+    .casabranca, .casapreta {
+        width: auto;  /* Ajuste conforme necessário */
+        height: auto; /* Ajuste conforme necessário */
+        padding: 0.5em; /* Ajuste conforme necessário */
+    }
+}
